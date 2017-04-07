@@ -11,17 +11,23 @@ import {
   Text,
   View
 } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default class crmWriting extends Component {
+  alf() {
+    return (<Icon name="cloud" size={30} color="pink" />);
+  }
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
+        <Icon name="book" size={30} color="skyblue" />
         <Text style={styles.instructions}>
           To get started, edit index.ios.js
         </Text>
+        {this.alf()}
         <Text style={styles.instructions}>
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
